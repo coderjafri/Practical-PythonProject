@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        
+      {% load static %}
+        <!-- Page Header-->
+          <header class="masthead" style="background-image: url({% static 'images/img/about-bg.jpg' %})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Images</h1>
+                            <span class="subheading">This is what I do.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+              <!-- Gallery -->
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="{% static 'images/img/img1.jpg' %}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+     src="{% static 'images/img/img2.jpg' %}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+       src="{% static 'images/img/img3.jpg' %}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="{% static 'images/img/img4.jpg' %}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+     src="{% static 'images/img/img5.jpg' %}"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+   
+  </div>
+</div>
+<!-- Gallery -->
+                </div>
+            </div>
+
+            
+        </main>
+      
+  {% endblock %}
